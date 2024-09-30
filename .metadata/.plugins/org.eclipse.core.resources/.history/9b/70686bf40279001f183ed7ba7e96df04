@@ -1,0 +1,16 @@
+package com.java82n_Workout;
+
+import java.util.List;
+
+public class ContainAtleast4Letter {
+
+	public static void main(String[] args) {
+List<String>name=List.of("Logesh","Sanjay","Gok","Vinitha");
+printlistname(name); 
+	}
+
+	private static void printlistname(List<String> names) {
+names.stream().filter(name ->name.length()>=4).forEach(System.out::println);	
+	}
+
+}

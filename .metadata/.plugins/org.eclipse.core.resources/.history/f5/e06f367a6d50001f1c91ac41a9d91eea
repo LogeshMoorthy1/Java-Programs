@@ -1,0 +1,30 @@
+package com.java8Program_Workout;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.stream.Collectors;
+
+public class NthHighestSalaryDemo {
+	
+	public static void main(String[] args) {
+		
+		Map<String,Integer> map1=new HashMap<>();
+		
+		map1.put("Logesh", 1000);
+		map1.put("Sanjay", 100);
+		map1.put("Vinitha", 200);
+		map1.put("Gokul", 300);
+		map1.put("Vino", 400);
+		map1.put("Preetha", 500);
+		map1.put("Pragathi", 600);
+		
+		Entry<String, Integer> entry = map1.entrySet().stream().sorted(Map.Entry.comparingByValue())
+		.collect(Collectors.toList()).get(1);
+		
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,15 @@
+package com.java82n_Workout;
+
+import java.util.List;
+
+public class PlayingWithOptional {
+	public static void main(String[] args) {
+		List<String> fruits= List.of("Apple","Orange","Guava","banana");
+		fruits.stream().filter(fruit ->fruit.startsWith("A")).forEach(System.out::println);
+		
+		
+		
+		
+	}
+
+}
